@@ -23,5 +23,10 @@ class MongoClientConnection {
 
 }
 const clientConnectionForMovies = new MongoClientConnection();
+
 const clientConnectionForComments = new MongoClientConnection();
+
+const clientConnectionForusers= new MongoClientConnection();
+
+
 console.log("Is the client for movies is the same  as the comments client ?", clientConnectionForMovies === clientConnectionForComments);

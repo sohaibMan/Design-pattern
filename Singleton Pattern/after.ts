@@ -33,4 +33,5 @@ class MongoClientConnection {
 
 const clientConnectionForMovies = await MongoClientConnection.getInstance();
 const clientConnectionForComments = await MongoClientConnection.getInstance();
-console.log("Is the client for movies is the same  as the comments client ?", clientConnectionForMovies === clientConnectionForComments);
+const test = await MongoClientConnection.getInstance();
+console.log("Is the client for movies is the same  as the comments client ?", clientConnectionForMovies === test);
